@@ -1,6 +1,6 @@
 import { TouchableOpacity, StyleSheet, View, Text } from 'react-native'
 import { BottomTabBarProps } from '@react-navigation/bottom-tabs'
-import { COLORS } from '../constants/Colors'
+import { COLORS } from '@constants/Colors'
 import FontAwesome from '@expo/vector-icons/FontAwesome'
 
 const TabBar = ({ state, descriptors, navigation }: BottomTabBarProps) => {
