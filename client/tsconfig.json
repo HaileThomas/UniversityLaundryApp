@@ -8,7 +8,8 @@
       "@assets/*": ["assets/*"],
       "@constants/*": ["constants/*"],
       "@styles/*": ["styles/*"],
-      "@models/*": ["models/*"]
+      "@models/*": ["models/*"],
+      "@hooks/*": ["hooks/*"]
     }
   }
 }

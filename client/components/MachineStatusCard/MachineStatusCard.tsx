@@ -35,8 +35,8 @@ export const MachineStatusCard = ({ machineName, machineNumber, status }: Machin
 
 const styles = StyleSheet.create({
   card: {
-    width: '85%',
-    height: '10%',
+    width: 350,
+    height: 80,
     borderRadius: 10,
     flexDirection: 'row',
     justifyContent: 'space-between',
@@ -47,8 +47,8 @@ const styles = StyleSheet.create({
     paddingLeft: 20,
   },
   icon: {
-    height: 50,
-    width: 50,
+    height: 40,
+    width: 40,
     backgroundColor: 'black',
   },
   description: {
