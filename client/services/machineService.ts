@@ -1,6 +1,6 @@
-import { Machines, MachineStatus } from '@models/laundry'
+import { MachineGroup } from '@models/laundry'
 
-export const fetchMachinesFromDatabase = async (): Promise<Machines[]> => {
+export const fetchMachinesFromDatabase = async (): Promise<MachineGroup[]> => {
   // Simulate a database fetch. Replace with database query logic
   return [
     {

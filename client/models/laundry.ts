@@ -8,7 +8,7 @@ export type MachineStatus = {
   status: Status
 }
 
-export type Machines = {
+export type MachineGroup = {
   title: MachineType
   data: MachineStatus[]
 }

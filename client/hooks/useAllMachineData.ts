@@ -1,16 +1,16 @@
 import { useEffect, useState } from 'react'
-import { Machines } from '@models/laundry'
+import { MachineGroup } from '@models/laundry'
 import { fetchMachinesFromDatabase } from 'services/machineService'
 
 export const useAllMachineData = () => {
   const [error, setError] = useState()
   const [isLoading, setIsLoading] = useState<boolean>(true)
-  const [data, setData] = useState<Machines[] | null>(null)
+  const [data, setData] = useState<MachineGroup[] | null>(null)
 
   useEffect(() => {
     const fetchMachineData = async () => {
       try {
-        const machines: Machines[] = await fetchMachinesFromDatabase()
+        const machines: MachineGroup[] = await fetchMachinesFromDatabase()
         setData(machines)
       } catch (err: any) {
         setError(err)

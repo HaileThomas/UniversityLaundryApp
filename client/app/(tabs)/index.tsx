@@ -1,5 +1,5 @@
-import { View, StyleSheet } from 'react-native'
-import { Hero } from '@components/Hero/Hero'
+import { Hero } from '@components/Layout/Hero'
+import { View } from 'react-native'
 
 const HomePage = () => {
   return (
