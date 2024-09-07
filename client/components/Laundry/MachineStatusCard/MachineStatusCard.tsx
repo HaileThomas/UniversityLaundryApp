@@ -1,3 +1,4 @@
+import MaterialCommunityIcons from '@expo/vector-icons/MaterialCommunityIcons'
 import { globalStyles } from '@styles/global'
 import { MachineStatus, Status } from '@models/laundry'
 import { Text, View, StyleSheet } from 'react-native'
@@ -20,7 +21,7 @@ export const MachineStatusCard = ({ machineName, machineNumber, status }: Machin
   return (
     <View style={[styles.card, globalStyles.shadow]}>
       <View style={styles.info}>
-        <View style={styles.icon} />
+        <MaterialCommunityIcons name={machineName === 'Washer' ? 'washing-machine' : 'tumble-dryer'} size={45} />
         <View style={styles.description}>
           <Text style={globalStyles.header}>{machineName}</Text>
           <Text style={globalStyles.paragraph}>Machine No: {machineNumber}</Text>
@@ -35,6 +36,7 @@ export const MachineStatusCard = ({ machineName, machineNumber, status }: Machin
 
 const styles = StyleSheet.create({
   card: {
+    backgroundColor: '#fff',
     width: 350,
     height: 80,
     borderRadius: 10,

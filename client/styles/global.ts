@@ -14,11 +14,10 @@ export const globalStyles = StyleSheet.create({
     fontSize: 15,
   },
   shadow: {
-    backgroundColor: '#fff',
     shadowColor: '#000',
-    shadowOffset: { width: 0, height: 2 },
-    shadowOpacity: 0.3,
-    shadowRadius: 4,
+    shadowOffset: { width: 0, height: 0 },
+    shadowOpacity: 0.25,
+    shadowRadius: 8,
     elevation: 5,
   },
 })

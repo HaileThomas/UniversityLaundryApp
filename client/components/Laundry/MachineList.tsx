@@ -11,9 +11,9 @@ const MachineList = ({ data }: MachineListProps) => (
   <SafeAreaView style={styles.container}>
     <SectionList
       sections={data ?? []}
-      keyExtractor={(item, index) => item.machineName + item.machineNumber + index}
+      keyExtractor={(item, index) => `${item.machineName}${item.machineNumber}${index}`}
       renderItem={({ item: { machineName, machineNumber, status } }) => (
-        <View style={styles.card}>
+        <View style={styles.cardWrapper}>
           <MachineStatusCard machineName={machineName} machineNumber={machineNumber} status={status} />
         </View>
       )}
@@ -35,14 +35,15 @@ const styles = StyleSheet.create({
     marginTop: 70,
     marginBottom: 90,
   },
-  sectionFooter: {
-    padding: 20,
-  },
-  card: {
-    marginVertical: 10,
+  cardWrapper: {
+    margin: 15,
   },
   sectionHeader: {
-    paddingVertical: 15,
+    paddingVertical: 20,
+    marginHorizontal: 20,
+  },
+  sectionFooter: {
+    padding: 20,
   },
 })
 
